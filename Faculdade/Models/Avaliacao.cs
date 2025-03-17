@@ -10,5 +10,11 @@ namespace Faculdade.Models
         public DateTime DataAvalicao { get; set; }
         public decimal Nota { get; set; }
 
+        // Essa propriedade é uma propriedade de navegação que representa o relacionamento 1 para 1 entre Avaliacao e Aluno
+        public Aluno Aluno { get; set; }       
+        
+        // Essa propriedade é uma propriedade de navegação que representa o relacionamento 1 para N entre Avaliacao e Turma
+        public Turma Turma { get; set; }
+
     }
 }
