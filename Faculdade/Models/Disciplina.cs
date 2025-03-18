@@ -2,6 +2,7 @@
 {
     public class Disciplina
     {
+        // Propriedades da classe Disciplina
         public int IdDisciplina { get; set; }
         public string Nome { get; set; }
         public string Descricao { get; set; }

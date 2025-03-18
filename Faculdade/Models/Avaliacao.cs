@@ -4,6 +4,7 @@ namespace Faculdade.Models
 {
     public class Avaliacao
     {
+        // Propriedades da classe Avaliacao
         public int IdAvaliacao { get; set; }
         public int IdAluno { get; set; }
         public int IdTurma { get; set; }

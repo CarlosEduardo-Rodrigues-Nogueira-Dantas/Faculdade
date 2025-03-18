@@ -2,6 +2,7 @@
 {
     public class Aluno
     {
+        // Propriedades da classe Aluno
         public int IdAluno { get; set; }
         public string Nome { get; set; }
         public DateTime DataNascimento  { get; set; }
