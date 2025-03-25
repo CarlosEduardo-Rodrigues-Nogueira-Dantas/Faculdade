@@ -11,13 +11,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Configuração do serviço de injeção de dependência para a classe ConnectionStringOptions 
 builder.Services.Configure<ConnectionStringOptions>(options => builder.Configuration.GetSection("ConnectionStrings").Bind(options));
 
 builder.Services.AddOptions();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure the HTTP request pipeline. 
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

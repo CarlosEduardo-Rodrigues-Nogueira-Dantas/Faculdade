@@ -2,6 +2,7 @@
 {
     public class AlunoTurma
     {
+        // Propriedades da classe AlunoTurma
         public int ID_Aluno { get; set; }
         public int ID_Turma { get; set; }
 
